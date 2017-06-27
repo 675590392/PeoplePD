@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_titile"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+    <EditText
+        android:id="@+id/select_nowStreets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextstyle"
+        android:completionThreshold="1"
+        android:layout_weight="1"
+        android:dropDownHeight="wrap_content"
+        android:dropDownWidth="205dp"
+        android:hint="搜索输入"
+        android:imeOptions="actionUnspecified"
+        android:singleLine="false"
+        android:textColor="#000"
+        android:layout_marginRight="@dimen/space_5"
+        android:dropDownHorizontalOffset="50dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_select_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:background="@drawable/bg_btn_login"/>
+            </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_add_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+        >
+    </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+      <!--  <Button
+            android:id="@+id/btn_select_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="@drawable/bg_btn_login"/>-->
+    </LinearLayout>
+
+</LinearLayout>

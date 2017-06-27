@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/layout_titile"/>
+
+    <com.yingde.gaydcj.view.ListViewCompat
+        android:id="@+id/rv_add_list"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    </com.yingde.gaydcj.view.ListViewCompat>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_margin="@dimen/space_6"
+        >
+        <ImageView
+            android:id="@+id/img_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house1"/>
+        <Button
+            android:id="@+id/btn_add_coming"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_login"
+            android:text="新增来沪人员"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+        <!--  <Button
+              android:id="@+id/xinzeng_bendirenkou"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:onClick="XZBDRK"
+              android:layout_marginLeft="4dp"
+              android:layout_marginRight="4dp"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_btn"
+              android:text="注销本地人员"
+              android:textColor="#FFFFFF"
+              android:textSize="15dp" />
+          <Button
+              android:id="@+id/xinzeng_select"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:onClick="XZBDRK_SELECT"
+              android:layout_marginRight="4dp"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_btn"
+              android:text="查询本地人员"
+              android:textColor="#FFFFFF"
+              android:textSize="15dp" />-->
+    </LinearLayout>
+
+</LinearLayout>

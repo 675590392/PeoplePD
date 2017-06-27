@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.yingde.gaydcj.util.MyToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:contentInsetStart="-10dp"
+    android:contentInsetEnd="-10dp"
+    android:contentInsetLeft="-10dp"
+    android:contentInsetRight="-10dp"
+    android:layout_marginLeft="-15dp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/title">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|left"
+        android:textColor="@color/selector_back"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:background="@drawable/buttonstyle"
+        android:text="返回"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:textColor="@color/selector_back"
+        android:text="切换"
+        android:background="@drawable/buttonstyle"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</com.yingde.gaydcj.util.MyToolbar>
+

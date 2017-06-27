@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/head" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/bt_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_item_bg"
+        android:drawableRight="@drawable/my_item_icon"
+        android:gravity="center"
+        android:text="检查新版本"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_function"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_item_bg"
+        android:drawableRight="@drawable/my_item_icon"
+        android:gravity="center"
+        android:text="功能介绍"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_item_bg"
+        android:drawableRight="@drawable/my_item_icon"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="您选择的范围是："/>
+
+        <Spinner
+            android:id="@+id/sp_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            android:textSize="15sp">
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_item_bg"
+        android:drawableRight="@drawable/my_item_icon"
+        android:gravity="center"
+        android:text="退出"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_item_bg"
+        android:drawableRight="@drawable/my_item_icon"
+        android:gravity="center"
+        android:text="二维码条形码扫描测试"
+        android:textSize="15sp" />
+
+</LinearLayout>

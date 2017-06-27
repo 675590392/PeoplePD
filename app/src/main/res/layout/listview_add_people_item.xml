@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:textColor="@color/black">
+
+
+    <LinearLayout
+        android:id="@+id/lin_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/text_add_asterisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="*"
+            android:textColor="#FF0000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/text_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="姓名:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_btn_login"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="人员拍照"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_add_srname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:gravity="right|center_vertical"
+            android:hint="请输入"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_add_srname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:gravity="right|center_vertical"
+            android:text="请选择"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/text_add_srLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:gravity="right|center_vertical"
+            android:text="请选择"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/imge_add_srname"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:gravity="right|center_vertical"
+            android:src="@drawable/head"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_add_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:completionThreshold="1"
+            android:gravity="right|center_vertical"
+            android:text="请选择日期"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"
+            android:visibility="gone" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_add_more_select_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/line_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <!-- 选项 -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:textColor="#555">
+
+                <!-- 选项1 -->
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:text="是"
+                    android:textColor="#555"
+                    android:textSize="16dp"></RadioButton>
+
+                <!-- 选项2 -->
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:text="否"
+                    android:textColor="#555"
+                    android:textSize="16dp"></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
